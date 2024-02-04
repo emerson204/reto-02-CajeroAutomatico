@@ -1,0 +1,602 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.pantalla {
+  width: 50rem;
+  height: 35rem;
+}
+
+.btn {
+  border: 1px solid white;
+  width: 7rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: transparent;
+  color: white;
+  border-radius: 1.2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+}
+
+/*PRIMER PASO*/
+
+.documento {
+  /* display: none; */
+  background-color: #03069a;
+  padding: 2.5rem;
+  border-radius: 0.7rem;
+}
+
+.documento__heading {
+  color: white;
+  font-size: 2rem;
+}
+
+.documento__span {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.documento__form {
+  margin-top: 2rem;
+}
+
+.documento__form input {
+  padding: 1.2rem 0.9rem;
+  width: 43%;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid white;
+  color: white;
+}
+
+.documento__form input::placeholder {
+  color: #d8d8d8;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.1rem;
+}
+
+.documento__btn {
+  margin-top: 1.2rem;
+  padding: 1rem 3rem;
+  border: none;
+  background-color: #fe7a1c;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  display: block;
+}
+
+/*SEGUNDO PASO*/
+.actividad {
+  background-color: #03069a;
+  padding: 2.5rem;
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: none;
+}
+
+.actividad__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actividad__heading {
+  color: white;
+}
+
+.actividad__heading span {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.actividad__salir i {
+  font-size: 1.2rem;
+}
+
+.actividad__box {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 2.5rem;
+}
+
+.actividad__retiro {
+  background-color: white;
+  padding: 3rem 8rem 0rem 1rem;
+  border-radius: 0.5rem;
+  transition: transform 300ms ease-out;
+}
+
+.actividad__retiro:hover {
+  transform: scale(1.1);
+}
+
+.actividad__efectre {
+  color: #03069a;
+  font-size: 1.9rem;
+  margin-top: 1.5rem;
+}
+
+.actividad__efectre span {
+  display: block;
+}
+
+.actividad__lineaef {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: #03069a;
+  margin-top: 1rem;
+}
+
+.actividad__two {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.actividad__transferir,
+.actividad__consulta {
+  padding: 2rem 7rem 2rem 1rem;
+  background-color: #fe7a1c;
+  border-radius: 0.5rem;
+  transition: transform 300ms ease-out;
+}
+
+.actividad__transferir:hover,
+.actividad__consulta:hover {
+  transform: scale(1.1);
+}
+
+.actividad__efect {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.actividad__efect span {
+  display: block;
+}
+
+.actividad__linea {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: white;
+  margin-top: 0.7rem;
+}
+
+.bx-dollar-circle {
+  font-size: 4rem;
+  color: #03069a;
+}
+
+.btn-p {
+  font-weight: 500;
+}
+
+/*TERCER PASO*/
+
+.retiro {
+  padding: 2.5rem;
+  display: none;
+}
+
+.retiro__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.retiro__heading span {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.retiro__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 3rem;
+  gap: 3rem;
+}
+
+.retiro__monto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.retiro__input {
+  padding: 1.5rem 1.5rem;
+  width: 100%;
+  border-radius: 0.6rem;
+  border: 2px solid #6c40ff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 1rem;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+.retiro__input::placeholder {
+  font-size: 1.4rem;
+  display: flex;
+}
+
+.retiro__btn {
+  padding: 1rem 2rem;
+  width: 100%;
+  border-radius: 2rem;
+  background-color: #d8daff;
+  border: none;
+  font-size: 1rem;
+  margin-top: 2rem;
+  color: #787b91;
+  font-weight: 600;
+}
+
+.retiro__soles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.retiro__money {
+  padding: 2rem 4rem;
+  border-radius: 0.6rem;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  background-color: #03069a;
+  color: white;
+}
+
+.retiro__saldo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.retirar__btn,
+.retiro__ver {
+  border: 1px solid #03069a;
+  color: #03069a;
+}
+
+/*CUARTO PASO*/
+.voucher {
+  background-color: #ebe8ec;
+  display: none;
+}
+
+.voucher__heading {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #787b91;
+  padding-top: 2rem;
+}
+
+.voucher__span {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.voucher__content {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 3rem;
+  margin-left: 2rem;
+  margin-top: 3rem;
+}
+
+.voucher__info {
+  background-color: white;
+  padding: 2.5rem 3rem;
+}
+
+.voucher__header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #6e7189;
+  margin-bottom: 1.5rem;
+}
+
+.voucher__retiro,
+.voucher__monto {
+  text-align: center;
+}
+
+.voucher__monto {
+  font-size: 2.2rem;
+  color: #03069a;
+  margin-bottom: 2.5rem;
+}
+
+.voucher__cuenta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #6e7189;
+  margin-bottom: 5rem;
+}
+
+.voucher__imprimir {
+  color: #03069a;
+  margin: 0 auto;
+  width: 50%;
+  border: 1px solid #03069a;
+  padding: 0.8rem 0;
+  border-radius: 1.2rem;
+}
+
+.voucher__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.voucher__retirar {
+  padding: 2rem 0;
+  width: 65%;
+  background-color: #03069a;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+  border: none;
+  transition: transform 300ms ease-out;
+}
+
+.voucher__retirar:hover {
+  transform: scale(1.1);
+}
+
+.voucher__retirar span {
+  display: block;
+  font-size: 1.2rem;
+}
+
+.voucher__retirar--sinsaldo {
+  background-color: white;
+  color: #03069a;
+}
+
+/*QUINTO PASO*/
+.clave {
+  background-color: #03069a;
+  padding: 2.5rem;
+  border-radius: 0.7rem;
+  display: none;
+}
+
+.clave__heading {
+  color: white;
+  font-size: 2rem;
+}
+
+.clave__span {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.clave__form {
+  margin-top: 2rem;
+}
+
+.clave__form input {
+  padding: 1.2rem 0.9rem;
+  width: 43%;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid white;
+  color: white;
+}
+
+.clave__form input::placeholder {
+  color: #d8d8d8;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.1rem;
+}
+
+.clave__btn {
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  border: none;
+  background-color: #fe7a1c;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contenedor_teclado {
+  display: flex;
+  gap: 1rem;
+  display: none;
+}
+
+.key {
+  width: 19rem;
+  background-color: white;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+}
+
+.tecla {
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px #979797;
+}
+
+.asterisco {
+  color: white;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+/*Consultar saldo*/
+.consulta {
+  background-color: #03069a;
+  padding: 1.5rem;
+  display: none;
+}
+
+.consulta__saldo {
+  margin-top: 7rem;
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.consulta__ver {
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 1rem 3rem;
+  border: none;
+  background-color: #fe7a1c;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  display: block;
+}
+
+.consulta__disponible {
+  text-align: center;
+  color: white;
+}
+
+.consulta__footer {
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+/*Enviar dinero a mi cuenta*/
+.enviarCash {
+  background-color: #03069a;
+  padding: 4rem;
+  position: relative;
+  display: none;
+}
+
+.enviarCash__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.enviarCash__monto {
+  font-size: 1.8rem;
+  color: white;
+}
+
+.enviarCash__input {
+  padding: 1.2rem 0.9rem;
+  width: 43%;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  margin-bottom: 3rem;
+}
+
+.enviarCash__depo {
+  padding: 1rem 3rem;
+  border: none;
+  background-color: #fe7a1c;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  display: block;
+}
+
+.enviarCash__modal {
+  position: absolute;
+  background-color: white;
+  padding: 3rem;
+  text-align: center;
+  left: 28%;
+  top: 34%;
+  border-radius: 0.2rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 300ms ease-in;
+}
+
+.modal__view {
+  opacity: 1;
+}
+
+.enviarCash__modal i {
+  font-size: 3rem;
+  color: #03069a;
+}
+
+.modal__title {
+  font-size: 1.3rem;
+}
+
+.alert {
+  margin: 1.2rem 0 0 0;
+  font-size: 1.1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: red;
+}
+
+.view {
+  display: block;
+}
+
+.notView {
+  display: none;
+}

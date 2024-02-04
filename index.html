@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <title>Cajero BCP</title>
+  </head>
+  <body>
+    <main class="contenedor">
+      <!--Primer paso-->
+      <section class="documento top pantalla">
+        <h1 class="documento__heading">
+          Ingresa tu numero de DNI
+          <span class="documento__span">para empezar tu sesión</span>
+        </h1>
+
+        <form action="" class="documento__form">
+          <input
+            type="text"
+            required
+            placeholder="8 números"
+            class="ingreseDni"
+          />
+        </form>
+        <p class="alert"></p>
+        <button class="documento__btn">Ingresar</button>
+      </section>
+
+      <!--Segundo paso-->
+      <section class="actividad top pantalla">
+        <div class="actividad__header">
+          <h2 class="actividad__heading">
+            <span class="actividad__span">Bienvenido</span>¿Qué operación
+            quieres hacer hoy?
+          </h2>
+          <button class="btn btn-reset">
+            <span class="material-symbols-outlined"> logout </span>
+            <p class="btn-p">Salir</p>
+          </button>
+        </div>
+
+        <div class="actividad__box">
+          <div class="actividad__retiro">
+            <i class="bx bx-dollar-circle"></i>
+            <h3 class="actividad__efectre">Retirar <span>Efectivo</span></h3>
+            <div class="actividad__lineaef"></div>
+          </div>
+          <div class="actividad__two">
+            <div class="actividad__transferir">
+              <h3 class="actividad__efect">Transferir <span>Efectivo</span></h3>
+              <div class="actividad__linea"></div>
+            </div>
+            <div class="actividad__consulta">
+              <h3 class="actividad__efect">Consultar <span>Saldo</span></h3>
+              <div class="actividad__linea"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Tercer paso-->
+      <section class="retiro top pantalla">
+        <div class="retiro__header">
+          <h2 class="retiro__heading">
+            <span class="retiro__span">Retiro de efectivo</span>Ingresa o
+            selecciona el monto a retirar
+          </h2>
+
+          <button class="btn retirar__btn">
+            <i class="bx bx-left-arrow-alt"></i>
+            Volver
+          </button>
+        </div>
+
+        <div class="retiro__content">
+          <div class="retiro__monto">
+            <h3 class="retiro__title">Ingresa monto</h3>
+            <div class="retiro__form">
+              <input type="text" class="retiro__input" placeholder="S/ 0" />
+            </div>
+            <button class="retiro__btn">Confirmar</button>
+          </div>
+          <div class="retiro__soles">
+            <button class="retiro__money">S/20</button>
+            <button class="retiro__money">S/50</button>
+            <button class="retiro__money">S/100</button>
+            <button class="retiro__money">S/150</button>
+          </div>
+        </div>
+
+        <div class="retiro__saldo">
+          <h3 class="retiro__dispo">
+            Saldo Disponible : <span class="retiro__sald">* * * * *</span>
+          </h3>
+          <button class="retiro__ver btn">
+            <i class="bx bx-chevron-left"></i>
+            Ver saldo
+          </button>
+        </div>
+      </section>
+
+      <section class="voucher pantalla top">
+        <h2 class="voucher__heading">
+          Revisa el detalle de tu retiro<span class="voucher__span"
+            >No olvides recoger tu tarjeta al finalizar</span
+          >
+        </h2>
+
+        <div class="voucher__content">
+          <div class="voucher__info">
+            <div class="voucher__header">
+              <p class="voucher__fecha">02 de Julio, 03:55 pm</p>
+              <p class="voucher__cajer">Cajero : 122545</p>
+            </div>
+            <p class="voucher__retiro">Monto en soles a retirar</p>
+            <h3 class="voucher__monto">S/ 20</h3>
+
+            <div class="voucher__cuenta">
+              <p class="voucher__origen">Cuenta origen</p>
+              <p class="voucher__so">Ahorros Soles S/</p>
+            </div>
+
+            <button class="voucher__imprimir btn">Imprimir Voucher</button>
+          </div>
+
+          <div class="voucher__box">
+            <button class="voucher__retirar voucher__retirar_saldo">
+              Retirar <span>y ver saldo</span>
+            </button>
+            <button class="voucher__retirar voucher__retirar--sinsaldo">
+              Retirar <span>sin ver saldo</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="clave top pantalla">
+        <h1 class="clave__heading">
+          Ingresa tu clave
+          <span class="clave__span">para confirmar tu retiro</span>
+        </h1>
+
+        <form action="" class="clave__form">
+          <input
+            type="password"
+            maxlength="8"
+            required
+            placeholder="4 números"
+            class="inputClave"
+          />
+        </form>
+        <div class="contenedor_teclado">
+          <div class="key">
+            <button class="tecla">1</button>
+            <button class="tecla">2</button>
+            <button class="tecla">3</button>
+            <button class="tecla">4</button>
+            <button class="tecla">5</button>
+            <button class="tecla">6</button>
+            <button class="tecla">7</button>
+            <button class="tecla">8</button>
+            <button class="tecla">9</button>
+            <button class="tecla">
+              <span class="material-symbols-outlined"> delete </span>
+            </button>
+            <button class="tecla">0</button>
+            <button class="tecla">
+              <span class="material-symbols-outlined"> backspace </span>
+            </button>
+          </div>
+          <div>
+            <button class="clave__btn">Retirar</button>
+          </div>
+        </div>
+        <p class="asterisco">Ejemplo : 4584</p>
+      </section>
+
+      <section class="consulta top pantalla">
+        <button class="consulta__btn btn">
+          <i class="bx bx-left-arrow-alt"></i>
+          Volver
+        </button>
+
+        <p class="consulta__saldo">- - - -</p>
+        <p class="consulta__disponible">Disponible</p>
+
+        <button class="consulta__ver">Ver Saldo</button>
+        <p class="consulta__footer">
+          Revista tu saldo con precausion , cualquier duda o consulta
+          comuniquese al 447-334-322
+        </p>
+      </section>
+
+      <section class="enviarCash top pantalla">
+        <div class="enviarCash__flex">
+          <p class="enviarCash__monto">Ingresa un monto</p>
+          <button class="enviarCash__btn btn">
+            <i class="bx bx-left-arrow-alt"></i>
+            Volver
+          </button>
+        </div>
+        <form>
+          <input
+            type="text"
+            required
+            placeholder="Ingresa monto"
+            class="enviarCash__input"
+          />
+        </form>
+
+        <div class="enviarCash__modal">
+          <i class="bx bx-check-shield"></i>
+          <div class="modal__cash">
+            <p class="modal__title">Operación Exitosa</p>
+            <p class="modal__mensaje">
+              Tu dinero se a transferido correctamente !
+            </p>
+          </div>
+        </div>
+
+        <button class="enviarCash__depo">Depositar</button>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>

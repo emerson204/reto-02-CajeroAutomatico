@@ -5,6 +5,7 @@ const btnDni = document.querySelector(".documento__btn");
 
 const pantallaActivy = document.querySelector(".actividad");
 const salirTodo = document.querySelector(".btn-reset");
+const bienvenidoName = document.querySelector(".actividad__span");
 
 const btnConsultarSaldo = document.querySelector(".actividad__consulta");
 const consultaS = document.querySelector(".consulta");
@@ -69,6 +70,8 @@ btnDni.addEventListener("click", (e) => {
   if (cliente) {
     saldo = cliente.saldo;
     pass = cliente.password;
+
+    bienvenidoName.textContent = `Bienvenido(a) ${cliente.nombre}`;
 
     ocultarPantalla(pantallaDni);
     mostrarPantalla(pantallaActivy);
